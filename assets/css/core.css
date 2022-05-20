@@ -19,3 +19,62 @@
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@400;700;900&display=swap');
+
+	/* font-family: 'Oswald', sans-serif; */
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+
+.container{
+	width: 1170px;
+	margin: 0px auto;
+}
+
+.header_section{
+	background-color: #e5e5e5;
+	padding: 5px 0px;
+}
+
+.heading{
+	display: flex;
+}
+
+.header_area_left{
+	flex: 1;
+}
+
+.header_area_left img{
+	width: 65px;
+}
+
+.header_area_right{
+	flex: 1;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.header_area_right a{
+	color: #007EBE;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.header_area_right a:hover{
+	color: #ffff;
+	background-color: #007EBE;
+}
