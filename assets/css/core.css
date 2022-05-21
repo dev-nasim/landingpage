@@ -24,6 +24,11 @@
 
 	/* font-family: 'Oswald', sans-serif; */
 
+
+
+	/*==================================================
+		1. default and core css
+	  ==================================================*/
 body{
 	margin: 0px;
 	padding: 0px;
@@ -40,10 +45,17 @@ a{
 	text-decoration: none;
 }
 
+
 .container{
 	width: 1170px;
 	margin: 0px auto;
 }
+
+
+
+	/*==================================================
+		2. header
+	  ==================================================*/
 
 .header_section{
 	background-color: #e5e5e5;
@@ -74,7 +86,27 @@ a{
     font-size: 20px;
     margin-left: 15px;
 }
-.header_area_right a:hover{
-	color: #ffff;
-	background-color: #007EBE;
+
+	/*==================================================
+		3. Main Menu
+	  ==================================================*/
+
+.main_menu_section{
+	background: #007EBE;
+}
+
+.main_menu{
+	display: flex;
+}
+
+.main_menu a{
+	font-size: 18px;
+	color: #fff;
+	padding: 11px 16px;
+	font-weight: 600;
+	font-family: 'Oswald', sans-serif;;
+}
+.main_menu a:hover{
+	color: #007EBE;
+	background: #fff;
 }
