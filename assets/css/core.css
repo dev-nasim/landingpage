@@ -51,6 +51,16 @@ a{
 	margin: 0px auto;
 }
 
+.title{}
+.title h2{
+	text-align: center;
+	font-size: 65px;
+	color: rgb(0, 126, 190);
+	font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+	margin: 0px;
+	margin-bottom: 25px;
+}
 
 
 	/*==================================================
@@ -104,9 +114,220 @@ a{
 	color: #fff;
 	padding: 11px 16px;
 	font-weight: 600;
-	font-family: 'Oswald', sans-serif;;
+	font-family: 'Oswald', sans-serif;
 }
 .main_menu a:hover{
 	color: #007EBE;
 	background: #fff;
+}
+
+
+
+	/*==================================================
+		4. Slider
+	  ==================================================*/
+
+
+.slider_section{}
+.slider_section img{
+	width: 100%;
+}
+
+
+
+
+	/*==================================================
+		5. Service
+	  ==================================================*/
+
+
+.service_section{padding: 100px;}
+.services{
+	display: flex;
+}
+.single_services{
+	background: #E5E5E5;
+    margin: 15px;
+    padding: 35px 15px;
+    position: relative;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.single_services:after{
+	position: absolute;
+	content: '';
+	width: 100px;
+	height: 10px;
+	background-color: #000;
+	top: 0px;
+	left: 35%;
+	transition: 0.8s;
+}
+
+.single_services:hover{
+	transform: scale(1.1);
+}
+
+.single_services:hover.single_services:after{
+	top: -5px;
+}
+
+.single_services h3{
+	font-weight: 600;
+	font-family: 'Oswald', sans-serif;
+	color: #34323B;
+	font-size: 25px;
+	margin: 0px;
+	text-align: center;
+
+}
+.single_services p{
+	font-size: 16px;
+	color: #000;
+	margin: 0px;
+	margin-top: 10px;
+}
+
+
+
+
+	 /*==================================================
+		6. Team
+	  ==================================================*/
+
+
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+.singele_team{
+	background: #e5e5e52b;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 0px 24px;
+    padding: 30px 70px;
+    border-radius: 20px 0px;
+}
+
+.team_image{
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	margin-bottom: 0px;
+	z-index: 1;
+	position: relative;
+}
+
+.team_image:before{
+	content: '';
+	width: 100%;
+	height: 0;
+	
+	background: rgb(0 126 190);
+	position: absolute;
+	bottom: 135%;
+	right: 0;
+	left: 0;
+	opacity: 0.2;
+	transform: scale(3);
+	transition: all 0.3s linear 0s;
+}
+
+.singele_team:hover .team_image::before{
+	height: 100%;
+}
+
+.singele_team .team_image:after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: #e5e5e5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.team_image img{
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	transform: scale(1);
+	transition: all 0.9s ease;
+}
+
+.singele_team:hover .team_image img{
+	box-shadow: 0 0 0 14px #f7f5ec;
+	transform: scale(0.7);
+}
+
+.team_content{
+	margin-bottom: 30px;
+}
+.team_content h3{
+	font-size: 22px;
+	font-weight: 600;
+	color: #4e5052;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+}
+.team_content span{
+	display: block;
+	font-size: 15px;
+	color: #4e5052;
+}
+.social_icon{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #1785eb;
+	position: absolute;
+	bottom: -100px;
+	left: 0;
+	transition: all 0.5s ease;
+
+}
+
+.singele_team:hover .social_icon{
+	bottom: 0;
+}
+
+.social_icon li{
+	display: inline-block;
+}
+.social_icon li a{
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	font-size: 17px;
+	color: #fff;
+	transition: all 0.3s ease 0s;
+}
+
+.social_icon li a:hover{
+	color: #1785ec;
+	background: #f7f5ec;
+}
+
+
+
+	 /*==================================================
+		7. Footer
+	  ==================================================*/
+
+.footer_section{
+	background: #e5e5e5;
+    padding: 5px;
+    margin-top: 100px;
+}
+.footer_section p{
+    font-size: 17px;
+    text-align: center;
+    font-weight: 600;
 }
